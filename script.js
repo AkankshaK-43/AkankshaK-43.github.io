@@ -5,10 +5,10 @@ window.addEventListener("load", () => {
 
 // Typing Animation
 const roles = [
-    "Data Engineer",
-    "Analytics Engineer",
-    "Snowflake Specialist",
-    "ETL Developer"
+    "Data Engineer.",
+    "Analytics Engineer.",
+    "Snowflake Specialist.",
+    "ETL Developer."
 ];
 
 let roleIndex = 0;
