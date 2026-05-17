@@ -317,37 +317,35 @@
 
             <div class="contact-wrapper glass-card">
 
-                <form id="contactForm">
+                <form id="contactForm" action="https://formspree.io/f/YOUR_FORMSPREE_ID_HERE" method="POST">
 
-                    <input type="text" id="name" placeholder="Your Name" required>
+                    <input type="text" name="name" id="name" placeholder="Your Name" required>
 
-                    <input type="email" id="email" placeholder="Your Email" required>
+                    <input type="email" name="email" id="email" placeholder="Your Email" required>
 
-                    <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                    <textarea name="message" id="message" rows="5" placeholder="Your Message" required></textarea>
 
-                    <button type="submit" class="btn primary-btn">
-                        Send Message
+                    <button type="submit" class="btn primary-btn submit-btn">
+                        <span>Send Message</span>
                     </button>
 
                 </form>
 
                 <div class="contact-info">
-
                     <p>
                         <i class="fas fa-envelope"></i>
-                        akanksha.kapoor43@gmail.com
+                        <a href="mailto:akanksha.kapoor43@gmail.com">akanksha.kapoor43@gmail.com</a>
                     </p>
 
                     <p>
                         <i class="fab fa-linkedin"></i>
-                        LinkedIn
+                        <a href="https://www.linkedin.com/in/-akankshakapoor/" target="_blank">LinkedIn</a>
                     </p>
 
                     <p>
                         <i class="fab fa-github"></i>
-                        GitHub
+                        <a href="#" target="_blank">GitHub</a>
                     </p>
-
                 </div>
 
             </div>
