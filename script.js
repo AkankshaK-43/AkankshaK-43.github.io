@@ -109,9 +109,8 @@ window.addEventListener("scroll", () => {
     });
 });
 
-// Contact Form Validation
-document.getElementById("contactForm").addEventListener("submit", function (e) {
-
+// Contact Form Handler with Formspree AJAX integration
+document.getElementById("contactForm").addEventListener("submit", async function (e) {
     e.preventDefault();
 
     const name = document.getElementById("name").value.trim();
@@ -124,17 +123,42 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
     }
 
     const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
-
     if (!email.match(emailPattern)) {
         alert("Enter a valid email.");
         return;
     }
 
-    alert("Message submitted successfully!");
+    const form = e.target;
+    const data = new FormData(form);
+    const button = form.querySelector(".submit-btn");
+    
+    // UI state loading indicator
+    button.disabled = true;
+    button.textContent = "Sending...";
 
-    this.reset();
+    try {
+        const response = await fetch(form.action, {
+            method: form.method,
+            body: data,
+            headers: {
+                'Accept': 'application/json'
+            }
+        });
+
+        if (response.ok) {
+            alert("Message submitted successfully!");
+            form.reset();
+        } else {
+            const errorData = await response.json();
+            alert(errorData.errors ? errorData.errors.map(err => err.message).join(", ") : "Oops! There was a problem submitting your form");
+        }
+    } catch (error) {
+        alert("Oops! There was a problem submitting your form network-side.");
+    } finally {
+        button.disabled = false;
+        button.textContent = "Send Message";
+    }
 });
-
 // Scroll Reveal Animation
 const revealElements = document.querySelectorAll(".glass-card");
 
