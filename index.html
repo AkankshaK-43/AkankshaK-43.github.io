@@ -1,380 +1,1032 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Akanksha Kapoor | Data Engineer</title>
+    <title>Akanksha Kapoor | Senior Data Engineer & Data Warehousing Consultant</title>
 
-    <meta name="description"
-        content="Portfolio website of Akanksha Kapoor - Senior Data Engineer specializing in Snowflake, SQL, Python, dbt, and scalable data platforms." />
+    <meta
+        name="description"
+        content="Akanksha Kapoor is a Senior Data Engineer and Data Warehousing Consultant with 5.9+ years of experience delivering scalable data platforms, analytics solutions, and cloud data architectures."
+    >
 
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
-    <link rel="stylesheet" href="style.css" />
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Loader -->
-    <div id="loader">
-        <div class="spinner"></div>
-    </div>
+    <!-- Navigation -->
 
-    <!-- Progress Bar -->
-    <div id="progress-bar"></div>
+    <header class="navbar">
 
-    <!-- Navbar -->
-    <header class="header">
-        <nav class="navbar container">
-            <a href="assets/ak.png" class="logo">Akanksha Kapoor</a>
+        <a href="#home" class="logo">
+            AK<span>.</span>
+        </a>
 
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#home" class="nav-link active">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#experience" class="nav-link">Experience</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#certifications" class="nav-link">Certifications</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-
-            <div class="nav-actions">
-                <button id="theme-toggle">
-                    <i class="fas fa-moon"></i>
-                </button>
-
-                <div class="hamburger" id="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
+        <nav class="nav-links">
+            <a href="#about">About</a>
+            <a href="#skills">Expertise</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#certifications">Certifications</a>
+            <a href="#contact">Contact</a>
         </nav>
+
+        <button class="menu-toggle" aria-label="Open navigation">
+            <span></span>
+            <span></span>
+        </button>
+
     </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-bg"></div>
 
-        <div class="container hero-content">
-            <div class="hero-text">
-                <p class="hero-subtitle">Hello, I'm</p>
-                <h1>Akanksha Kapoor</h1>
+    <main>
 
-                <h2>
-                    <span id="typing"></span>
-                </h2>
+        <!-- Hero -->
+
+        <section id="home" class="hero">
+
+            <div class="hero-content">
+
+                <p class="eyebrow">
+                    SENIOR DATA ENGINEER · DATA WAREHOUSING CONSULTANT
+                </p>
+
+                <h1>
+                    Building scalable
+                    <span>data solutions</span>
+                    from business problem
+                    to production.
+                </h1>
 
                 <p class="hero-description">
-                    Building scalable data platforms and automation workflows.
+                    I design and deliver cloud-native data platforms, data warehouses,
+                    ELT pipelines, and analytics solutions for clients across the
+                    U.S. and Europe.
                 </p>
 
-                <div class="hero-buttons">
-                    <a href="assets/AkankshaKapoor_SF_DataEngineer.pdf" class="btn primary-btn" download>
-                        Download Resume
+                <div class="hero-actions">
+
+                    <a href="#experience" class="btn btn-primary">
+                        View Experience
                     </a>
 
-                    <a href="#contact" class="btn secondary-btn">
-                        Contact Me
+                    <a href="#contact" class="btn btn-secondary">
+                        Get In Touch
                     </a>
+
                 </div>
 
-                <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/-akankshakapoor/" target="_blank">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
+                <div class="hero-tags">
 
-                    <a href="#" target="_blank">
-                        <i class="fab fa-github"></i>
-                    </a>
+                    <span>Snowflake</span>
+                    <span>Data Warehousing</span>
+                    <span>Consulting & Delivery</span>
+                    <span>Data Architecture</span>
 
-                    <a href="mailto:akanksha.kapoor43@gmail.com">
-                        <i class="fas fa-envelope"></i>
-                    </a>
                 </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- About -->
-    <section id="about" class="section">
-        <div class="container">
-            <div class="section-title">
-                <h2>About Me</h2>
             </div>
 
-            <div class="about-content glass-card">
-                <p>
-                    Senior Data Engineer with 5+ years of experience designing and building scalable
-                    cloud-based data platforms using Snowflake, SQL, Python, and dbt.
+
+            <div class="hero-side">
+
+                <div class="availability">
+
+                    <span class="status-dot"></span>
+
+                    <span>
+                        5.9+ years of experience
+                    </span>
+
+                </div>
+
+
+                <div class="hero-stat">
+
+                    <strong>5+</strong>
+
+                    <span>
+                        Snowflake Data<br>
+                        Platforms Delivered
+                    </span>
+
+                </div>
+
+
+                <div class="hero-stat">
+
+                    <strong>30–50%</strong>
+
+                    <span>
+                        Query Performance<br>
+                        Improvement
+                    </span>
+
+                </div>
+
+
+                <div class="hero-stat">
+
+                    <strong>~40%</strong>
+
+                    <span>
+                        Snowflake Compute<br>
+                        Cost Reduction
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- About -->
+
+        <section id="about" class="section">
+
+            <div class="section-intro">
+
+                <p class="eyebrow">
+                    01 / ABOUT
                 </p>
 
-                <p>
-                    Passionate about automation, analytics engineering, ETL pipelines,
-                    data modeling, and modern data architecture.
+                <h2>
+                    Data engineering with
+                    <span>a consulting mindset.</span>
+                </h2>
+
+            </div>
+
+
+            <div class="about-grid">
+
+                <div class="about-text">
+
+                    <p>
+                        I am a Senior Data Engineer and Data Warehousing Consultant
+                        with 5.9+ years of experience delivering cloud-native data
+                        platforms, data warehouses, ELT pipelines, and analytics
+                        solutions.
+                    </p>
+
+                    <p>
+                        My work combines hands-on engineering with consulting and
+                        delivery responsibilities including client discovery,
+                        requirements gathering, solution design, project scoping,
+                        effort estimation, and end-to-end technical delivery.
+                    </p>
+
+                    <p>
+                        I specialize in Snowflake, AWS, Python, SQL, and dbt, with
+                        experience across data modeling, ETL/ELT, performance
+                        optimization, data quality, governance, and analytics.
+                    </p>
+
+                    <p>
+                        Beyond building pipelines, I work with business and technical
+                        stakeholders to translate complex requirements into scalable
+                        solutions, coordinate delivery, mentor engineers, and create
+                        executive-facing reporting that supports decision-making.
+                    </p>
+
+                </div>
+
+
+                <div class="stats-grid">
+
+                    <div class="stat-card">
+
+                        <strong>5.9+</strong>
+
+                        <span>
+                            Years of<br>
+                            Experience
+                        </span>
+
+                    </div>
+
+
+                    <div class="stat-card">
+
+                        <strong>5+</strong>
+
+                        <span>
+                            Snowflake Platforms<br>
+                            Delivered
+                        </span>
+
+                    </div>
+
+
+                    <div class="stat-card">
+
+                        <strong>20+</strong>
+
+                        <span>
+                            dbt Models<br>
+                            Implemented
+                        </span>
+
+                    </div>
+
+
+                    <div class="stat-card">
+
+                        <strong>5</strong>
+
+                        <span>
+                            Professional<br>
+                            Certifications
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Skills -->
+
+        <section id="skills" class="section section-dark">
+
+            <div class="section-intro">
+
+                <p class="eyebrow">
+                    02 / EXPERTISE
                 </p>
 
-                <div class="about-cards">
-                    <div class="info-card">
-                        <h3>5.6+</h3>
-                        <p>Years Experience</p>
+                <h2>
+                    Data, consulting,
+                    <span>and delivery capabilities.</span>
+                </h2>
+
+            </div>
+
+
+            <div class="skills-grid">
+
+
+                <article class="skill-card">
+
+                    <span class="skill-number">01</span>
+
+                    <h3>
+                        Consulting & Delivery
+                    </h3>
+
+                    <div class="tags">
+
+                        <span>Client Engagement</span>
+                        <span>Requirements Gathering</span>
+                        <span>Technical Solutioning</span>
+                        <span>Project Scoping</span>
+                        <span>Effort Estimation</span>
+                        <span>Stakeholder Management</span>
+                        <span>Delivery Coordination</span>
+                        <span>Technical Leadership</span>
+
                     </div>
 
-                    <div class="info-card">
-                        <h3>20+</h3>
-                        <p>Projects</p>
+                </article>
+
+
+                <article class="skill-card">
+
+                    <span class="skill-number">02</span>
+
+                    <h3>
+                        Data Engineering
+                    </h3>
+
+                    <div class="tags">
+
+                        <span>ETL / ELT</span>
+                        <span>Data Modeling</span>
+                        <span>Dimensional Modeling</span>
+                        <span>Data Quality</span>
+                        <span>Change Data Capture</span>
+                        <span>dbt</span>
+                        <span>Streams</span>
+                        <span>Tasks</span>
+
                     </div>
 
-                    <div class="info-card">
-                        <h3>5</h3>
-                        <p>Certifications</p>
+                </article>
+
+
+                <article class="skill-card">
+
+                    <span class="skill-number">03</span>
+
+                    <h3>
+                        Cloud & Platforms
+                    </h3>
+
+                    <div class="tags">
+
+                        <span>Snowflake</span>
+                        <span>Snowpark</span>
+                        <span>AWS</span>
+                        <span>S3</span>
+                        <span>Redshift</span>
+                        <span>Lambda</span>
+                        <span>Databricks</span>
+                        <span>Time Travel</span>
+
                     </div>
-                </div>
+
+                </article>
+
+
+                <article class="skill-card">
+
+                    <span class="skill-number">04</span>
+
+                    <h3>
+                        Programming & Data
+                    </h3>
+
+                    <div class="tags">
+
+                        <span>Python</span>
+                        <span>SQL</span>
+                        <span>Pandas</span>
+                        <span>NumPy</span>
+                        <span>Snowpark</span>
+                        <span>Performance Tuning</span>
+                        <span>Data Warehousing</span>
+
+                    </div>
+
+                </article>
+
+
+                <article class="skill-card">
+
+                    <span class="skill-number">05</span>
+
+                    <h3>
+                        Analytics & BI
+                    </h3>
+
+                    <div class="tags">
+
+                        <span>Tableau</span>
+                        <span>Power BI</span>
+                        <span>Looker Studio</span>
+                        <span>Snowsight</span>
+                        <span>Executive Dashboards</span>
+
+                    </div>
+
+                </article>
+
+
+                <article class="skill-card">
+
+                    <span class="skill-number">06</span>
+
+                    <h3>
+                        AI & Emerging Technology
+                    </h3>
+
+                    <div class="tags">
+
+                        <span>Generative AI</span>
+                        <span>Snowflake Cortex AI</span>
+                        <span>LLM Applications</span>
+                        <span>Prompt Engineering</span>
+                        <span>AI-Assisted Development</span>
+
+                    </div>
+
+                </article>
+
             </div>
-        </div>
-    </section>
 
-<!-- NEW SKILLS -->
+        </section>
 
-<section id="skills" class="section">
-    <div class="container">
-        <div class="section-title">
-            <h2>Skills</h2>
-        </div>
 
-        <div class="skills-grid">
+        <!-- Experience -->
 
-            <div class="skill-card glass-card">
-                <h3>Data Engineering</h3>
-                <div class="skill-tags">
-                    <span class="tag">SQL</span>
-                    <span class="tag">dbt</span>
-                    <span class="tag">Airflow</span>
-                    <span class="tag">ETL/ELT</span>
-                </div>
+        <section id="experience" class="section">
+
+            <div class="section-intro">
+
+                <p class="eyebrow">
+                    03 / EXPERIENCE
+                </p>
+
+                <h2>
+                    Delivering data solutions
+                    <span>for global clients.</span>
+                </h2>
+
             </div>
 
-            <div class="skill-card glass-card">
-                <h3>Cloud & Warehousing</h3>
-                <div class="skill-tags">
-                    <span class="tag">Snowflake</span>
-                    <span class="tag">AWS</span>
-                    <span class="tag">Snowpark</span>
-                    <span class="tag">Cloud Data Lakes</span>
-                </div>
-            </div>
-
-            <div class="skill-card glass-card">
-                <h3>Programming</h3>
-                <div class="skill-tags">
-                    <span class="tag">Python</span>
-                    <span class="tag">APIs</span>
-                    <span class="tag">Git</span>
-                    <span class="tag">Bash</span>
-                </div>
-            </div>
-
-            <div class="skill-card glass-card">
-                <h3>Analytics</h3>
-                <div class="skill-tags">
-                    <span class="tag">Power BI</span>
-                    <span class="tag">Tableau</span>
-                    <span class="tag">Data Modeling</span>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-
-
-    <!-- Experience -->
-    <section id="experience" class="section">
-        <div class="container">
-            <div class="section-title">
-                <h2>Experience</h2>
-            </div>
 
             <div class="timeline">
 
-                <div class="timeline-item glass-card">
-                    <h3>Senior Data Engineer — Massive Rocket India</h3>
-                    <span>Jul 2024 – Present</span>
 
-                    <ul>
-                        <li>Built scalable ETL pipelines</li>
-                        <li>Optimized Snowflake workloads</li>
-                        <li>Automated workflows using Python and Snowpark</li>
-                        <li>Built dbt transformation layers</li>
-                        <li>Created dashboards and reporting systems</li>
-                    </ul>
-                </div>
+                <!-- Massive Rocket -->
 
-                <div class="timeline-item glass-card">
-                    <h3>Associate Consultant — Capgemini India</h3>
-                    <span>Nov 2020 – Jul 2024</span>
+                <article class="experience-card">
 
-                    <ul>
-                        <li>Built analytics dashboards</li>
-                        <li>Optimized SQL queries</li>
-                        <li>Developed automation scripts</li>
-                        <li>Worked on customer analytics projects</li>
-                    </ul>
-                </div>
+                    <div class="experience-meta">
+
+                        <span class="company-index">
+                            01
+                        </span>
+
+                        <span class="date">
+                            JUL 2024 — PRESENT
+                        </span>
+
+                    </div>
+
+
+                    <div class="experience-content">
+
+                        <h3>
+                            Senior Data Engineer
+                        </h3>
+
+                        <h4>
+                            Massive Rocket India
+                        </h4>
+
+                        <p class="company-description">
+
+                            Global martech consultancy delivering Data and CRM
+                            solutions for growth-stage and enterprise clients
+                            across the U.S. and Europe.
+
+                        </p>
+
+
+                        <ul>
+
+                            <li>
+                                Partner with U.S. and European clients to translate
+                                business requirements into scalable data and analytics solutions.
+                            </li>
+
+                            <li>
+                                Lead client discovery, requirements gathering, project
+                                scoping, SOW preparation, and effort estimation.
+                            </li>
+
+                            <li>
+                                Coordinate delivery across concurrent initiatives,
+                                communicating priorities, dependencies, progress,
+                                and technical risks.
+                            </li>
+
+                            <li>
+                                Architected and delivered 5+ Snowflake data platforms
+                                supporting API, batch, and event-driven ingestion.
+                            </li>
+
+                            <li>
+                                Designed dimensional and domain-based models, improving
+                                BI and CRM query performance by 30–50%.
+                            </li>
+
+                            <li>
+                                Optimized queries, schemas, and workloads, reducing
+                                Snowflake compute costs by approximately 40%.
+                            </li>
+
+                            <li>
+                                Built production-grade Python and SQL pipelines with
+                                idempotency and failure recovery, reducing reprocessing
+                                effort by approximately 40%.
+                            </li>
+
+                            <li>
+                                Implemented Change Data Capture using Snowflake Streams
+                                and Tasks to improve incremental processing and data freshness.
+                            </li>
+
+                            <li>
+                                Designed data quality and audit frameworks supporting
+                                pipeline reliability, governance, and compliance reporting.
+                            </li>
+
+                            <li>
+                                Built 20+ dbt models with testing, source definitions,
+                                and lineage to improve governance and analytics delivery.
+                            </li>
+
+                            <li>
+                                Served as data lead, managing work allocation, code
+                                reviews, technical decisions, and mentoring engineers.
+                            </li>
+
+                            <li>
+                                Built 10+ executive-facing dashboards translating complex
+                                data into actionable business insights.
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Capgemini -->
+
+                <article class="experience-card">
+
+                    <div class="experience-meta">
+
+                        <span class="company-index">
+                            02
+                        </span>
+
+                        <span class="date">
+                            NOV 2020 — JUL 2024
+                        </span>
+
+                    </div>
+
+
+                    <div class="experience-content">
+
+                        <h3>
+                            Associate Consultant
+                        </h3>
+
+                        <h4>
+                            Capgemini India
+                        </h4>
+
+
+                        <ul>
+
+                            <li>
+                                Partnered with U.S.-based clients and stakeholders to
+                                translate business and reporting requirements into
+                                technical solutions.
+                            </li>
+
+                            <li>
+                                Designed and optimized Snowflake fact and dimension
+                                models, improving analytics query performance by 30–40%.
+                            </li>
+
+                            <li>
+                                Leveraged SnowSQL and Snowflake Time Travel for validation,
+                                rollback, and recovery, reducing data downtime by 30%+.
+                            </li>
+
+                            <li>
+                                Delivered Tableau and Power BI dashboards for business
+                                and leadership teams to support data-driven decisions.
+                            </li>
+
+                            <li>
+                                Supported delivery across multiple client initiatives,
+                                coordinating requirements and technical deliverables
+                                to meet tight SLAs.
+                            </li>
+
+                            <li>
+                                Developed Python-based data analysis and segmentation
+                                solutions using Pandas and NumPy for large lending datasets.
+                            </li>
+
+                            <li>
+                                Built data schemas, ETL mappings, and SOPs supporting
+                                client communication and knowledge transfer across
+                                distributed teams.
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </article>
 
             </div>
-        </div>
-    </section>
 
-    <!-- Projects -->
-    <section id="projects" class="section">
-        <div class="container">
-            <div class="section-title">
-                <h2>Projects</h2>
+        </section>
+
+
+        <!-- Approach -->
+
+        <section id="approach" class="section approach-section">
+
+            <div class="section-intro">
+
+                <p class="eyebrow">
+                    04 / HOW I WORK
+                </p>
+
+                <h2>
+                    From business problem
+                    <span>to scalable data solution.</span>
+                </h2>
+
             </div>
+
+
+            <div class="approach-grid">
+
+
+                <article class="approach-card">
+
+                    <span>01</span>
+
+                    <h3>Discover</h3>
+
+                    <p>
+                        Understand business objectives, data challenges,
+                        reporting needs, and technical constraints.
+                    </p>
+
+                </article>
+
+
+                <article class="approach-card">
+
+                    <span>02</span>
+
+                    <h3>Design</h3>
+
+                    <p>
+                        Translate requirements into scalable architectures,
+                        data models, pipelines, and delivery plans.
+                    </p>
+
+                </article>
+
+
+                <article class="approach-card">
+
+                    <span>03</span>
+
+                    <h3>Deliver</h3>
+
+                    <p>
+                        Build reliable production data solutions while
+                        coordinating priorities, dependencies, and quality.
+                    </p>
+
+                </article>
+
+
+                <article class="approach-card">
+
+                    <span>04</span>
+
+                    <h3>Optimize</h3>
+
+                    <p>
+                        Improve performance, cost efficiency, data quality,
+                        governance, and usability of data products.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- Projects -->
+
+        <section id="projects" class="section section-dark">
+
+            <div class="section-intro">
+
+                <p class="eyebrow">
+                    05 / SELECTED PROJECTS
+                </p>
+
+                <h2>
+                    Turning complex data
+                    <span>into usable products.</span>
+                </h2>
+
+            </div>
+
 
             <div class="projects-grid">
 
-                <div class="project-card glass-card">
-                    <h3>Customer 360 Data Platform</h3>
-                    <p>Unified customer data platform using Snowflake and Python.</p>
+
+                <article class="project-card">
+
+                    <span class="project-number">
+                        01
+                    </span>
+
+                    <h3>
+                        Omnichannel Customer 360
+                        & Activation Engine
+                    </h3>
+
+                    <p>
+                        Architected a Star Schema-based Snowflake Customer 360
+                        platform consolidating fragmented API data into a Golden
+                        Record for 700K+ users.
+                    </p>
+
+                    <p>
+                        Engineered a Python Reverse ETL pipeline to synchronize
+                        refined customer segments with Braze, automating
+                        near real-time customer activation.
+                    </p>
 
                     <div class="tags">
+
                         <span>Snowflake</span>
-                        <span>Python</span>
+                        <span>Star Schema</span>
                         <span>dbt</span>
+                        <span>Python</span>
+                        <span>REST APIs</span>
+                        <span>Braze</span>
+
                     </div>
 
-                    <div class="project-links">
-                        <a href="#">GitHub</a>
-                        <a href="#">Demo</a>
-                    </div>
-                </div>
+                </article>
 
-                <div class="project-card glass-card">
-                    <h3>Snowflake Cost Optimization Framework</h3>
-                    <p>Reduced warehouse costs using workload optimization strategies.</p>
+
+                <article class="project-card">
+
+                    <span class="project-number">
+                        02
+                    </span>
+
+                    <h3>
+                        Data Transformation
+                        & Executive Reporting
+                    </h3>
+
+                    <p>
+                        Automated cross-client revenue and engagement reporting
+                        by integrating Snowflake with REST APIs, saving approximately
+                        1,000 manual working hours.
+                    </p>
+
+                    <p>
+                        Delivered standardized metrics and executive dashboards
+                        using optimized SQL transformations to improve reporting
+                        accuracy and decision-making speed.
+                    </p>
 
                     <div class="tags">
+
                         <span>Snowflake</span>
                         <span>SQL</span>
+                        <span>Python</span>
+                        <span>Looker Studio</span>
+                        <span>REST APIs</span>
+
                     </div>
 
-                    <div class="project-links">
-                        <a href="#">GitHub</a>
-                        <a href="#">Demo</a>
-                    </div>
-                </div>
+                </article>
 
-                <div class="project-card glass-card">
-                    <h3>Automated Braze Sync Pipeline</h3>
-                    <p>Built automated data sync workflows for marketing automation.</p>
+
+                <article class="project-card">
+
+                    <span class="project-number">
+                        03
+                    </span>
+
+                    <h3>
+                        AI-Powered Data Catalog
+                        & Documentation Framework
+                    </h3>
+
+                    <p>
+                        Built a Snowflake Cortex AI-powered framework that
+                        automatically generated business-friendly documentation
+                        for warehouse objects, data models, metrics, and lineage.
+                    </p>
+
+                    <p>
+                        Reduced manual documentation effort by approximately 80%
+                        while improving data governance and discoverability.
+                    </p>
 
                     <div class="tags">
+
+                        <span>Snowflake Cortex AI</span>
+                        <span>Snowflake</span>
                         <span>Python</span>
-                        <span>APIs</span>
+                        <span>SQL</span>
+                        <span>Metadata</span>
+                        <span>Data Lineage</span>
+
                     </div>
 
-                    <div class="project-links">
-                        <a href="#">GitHub</a>
-                        <a href="#">Demo</a>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- Certifications -->
+
+        <section id="certifications" class="section">
+
+            <div class="section-intro">
+
+                <p class="eyebrow">
+                    06 / CERTIFICATIONS
+                </p>
+
+                <h2>
+                    Continuous learning,
+                    <span>practical expertise.</span>
+                </h2>
+
+            </div>
+
+
+            <div class="certifications-list">
+
+
+                <div class="certification-item">
+
+                    <span>01</span>
+
+                    <div>
+
+                        <h3>
+                            AWS Certified Data Engineer – Associate
+                        </h3>
+
+                        <p>
+                            Amazon Web Services · 2026
+                        </p>
+
                     </div>
+
+                </div>
+
+
+                <div class="certification-item">
+
+                    <span>02</span>
+
+                    <div>
+
+                        <h3>
+                            SnowPro Core Certification
+                        </h3>
+
+                        <p>
+                            Snowflake · 2025
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="certification-item">
+
+                    <span>03</span>
+
+                    <div>
+
+                        <h3>
+                            Braze Certified Technical Architect
+                        </h3>
+
+                        <p>
+                            Braze · 2025
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="certification-item">
+
+                    <span>04</span>
+
+                    <div>
+
+                        <h3>
+                            Braze Certified Developer
+                        </h3>
+
+                        <p>
+                            Braze · 2024
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="certification-item">
+
+                    <span>05</span>
+
+                    <div>
+
+                        <h3>
+                            Data Analysis with Python
+                        </h3>
+
+                        <p>
+                            IBM Developer Skills Network · 2023
+                        </p>
+
+                    </div>
+
                 </div>
 
             </div>
-        </div>
-    </section>
 
-    <!-- Certifications -->
-    <section id="certifications" class="section">
-        <div class="container">
-            <div class="section-title">
-                <h2>Certifications</h2>
-            </div>
+        </section>
 
-            <div class="cert-grid">
 
-                
-                <div class="cert-card glass-card">
-                    <i class="fa-solid fa-snowflake"></i>    SnowPro Core</div>
+        <!-- Contact -->
 
-                
-                <div class="cert-card glass-card">
-                    <i class="fa-brands fa-aws"></i>    AWS Data Engineer Associate</div>
+        <section id="contact" class="contact-section">
 
-                
-                <div class="cert-card glass-card">
-                    <i class="fa-solid fa-b"></i>    Braze Technical Architect</div>
-                
-                
-                <div class="cert-card glass-card">
-                    <i class="fa-brands fa-python"></i>    Data Analysis with Python</div>
+            <p class="eyebrow">
+                07 / CONTACT
+            </p>
 
-            </div>
-        </div>
-    </section>
+            <h2>
+                Let's build better
+                <span>data products.</span>
+            </h2>
 
-    <!-- Contact -->
-    <section id="contact" class="section">
-        <div class="container">
-            <div class="section-title">
-                <h2>Contact</h2>
-            </div>
+            <p class="contact-description">
 
-            <div class="contact-wrapper glass-card">
+                Open to opportunities in data engineering, data warehousing,
+                analytics, and technology consulting.
 
-                <form id="contactForm" action="https://formspree.io/f/mojbayld" method="POST">
+            </p>
 
-                    <input type="text" name="name" id="name" placeholder="Your Name" required>
 
-                    <input type="email" name="email" id="email" placeholder="Your Email" required>
+            <a
+                class="contact-email"
+                href="mailto:akanksha.kapoor43@gmail.com"
+            >
+                akanksha.kapoor43@gmail.com
+            </a>
 
-                    <textarea name="message" id="message" rows="5" placeholder="Your Message" required></textarea>
 
-                    <button type="submit" class="btn primary-btn submit-btn">
-                        <span>Send Message</span>
-                    </button>
+            <div class="contact-socials">
 
-                </form>
+                <a
+                    href="https://www.linkedin.com/in/-akankshakapoor/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    LinkedIn ↗
+                </a>
 
-                <div class="contact-info">
-                    <p>
-                        <i class="fas fa-envelope"></i>
-                        <a href="mailto:akanksha.kapoor43@gmail.com">akanksha.kapoor43@gmail.com</a>
-                    </p>
-
-                    <p>
-                        <i class="fab fa-linkedin"></i>
-                        <a href="https://www.linkedin.com/in/-akankshakapoor/" target="_blank">LinkedIn</a>
-                    </p>
-
-                    <p>
-                        <i class="fab fa-github"></i>
-                        <a href="https://github.com/AkankshaK-43/" target="_blank">GitHub</a>
-                    </p>
-                </div>
+                <a href="#home">
+                    Back to top ↑
+                </a>
 
             </div>
-        </div>
-    </section>
 
-    <!-- Footer -->
+        </section>
+
+    </main>
+
+
     <footer>
-        <p>© 2026 Akanksha Kapoor. All Rights Reserved.</p>
 
-        <a href="#home" class="back-to-top">
-            <i class="fas fa-arrow-up"></i>
-        </a>
+        <p>
+            © 2026 Akanksha Kapoor
+        </p>
+
+        <p>
+            Senior Data Engineer · Data Warehousing Consultant
+        </p>
+
     </footer>
+
 
     <script src="script.js"></script>
 
 </body>
-
 </html>
