@@ -670,11 +670,11 @@ section {
 }
 
 .certifications-list {
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: var(--spacing-lg);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-xl);
 }
 
 .certification-item {
@@ -683,6 +683,8 @@ section {
     border-radius: var(--radius-md);
     background-color: #fafafa;
     transition: all var(--transition-base);
+    display: flex;
+    flex-direction: column;
 }
 
 [data-theme="dark"] .certification-item {
@@ -693,6 +695,7 @@ section {
     border-color: var(--color-accent);
     background-color: var(--color-white);
     transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.1);
 }
 
 [data-theme="dark"] .certification-item:hover {
@@ -702,8 +705,40 @@ section {
 .cert-name {
     font-size: 1.05rem;
     font-weight: 600;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
     color: var(--color-text);
+}
+
+.cert-badge {
+    margin-top: var(--spacing-md);
+    display: flex;
+    justify-content: center;
+}
+
+.cert-badge iframe {
+    border: none;
+}
+
+.cert-verify {
+    margin-bottom: var(--spacing-md);
+}
+
+.verify-link {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: var(--color-accent);
+    color: var(--color-white);
+    border-radius: var(--radius-sm);
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: all var(--transition-fast);
+    text-decoration: none;
+}
+
+.verify-link:hover {
+    background-color: var(--color-accent-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(37, 99, 235, 0.2);
 }
 
 .cert-issuer {
@@ -717,6 +752,7 @@ section {
     font-size: 0.85rem;
     color: var(--color-text-muted);
     font-family: var(--font-mono);
+    margin-top: auto;
 }
 
 /* ===================================================
@@ -936,6 +972,15 @@ section {
         grid-template-columns: 1fr;
     }
 
+    .certifications-list {
+        grid-template-columns: 1fr;
+    }
+
+    .cert-badge {
+        transform: scale(0.85);
+        transform-origin: top center;
+    }
+
     section {
         padding: var(--spacing-xl) var(--spacing-lg);
     }
@@ -994,5 +1039,14 @@ section {
 
     .nav-logo {
         font-size: 1.1rem;
+    }
+
+    .certifications-list {
+        grid-template-columns: 1fr;
+    }
+
+    .cert-badge {
+        transform: scale(0.7);
+        transform-origin: top center;
     }
 }
