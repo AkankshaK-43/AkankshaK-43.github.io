@@ -58,6 +58,27 @@ resumeDownload.addEventListener('click', (e) => {
 });
 
 // ===================================================
+// LOAD CREDLY BADGES
+// ===================================================
+
+function loadCredlyBadges() {
+    // Load Credly embed script if not already loaded
+    if (!window.credlyLoaded) {
+        const script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.async = true;
+        script.src = '//cdn.credly.com/assets/utilities/embed.js';
+        document.body.appendChild(script);
+        window.credlyLoaded = true;
+    }
+}
+
+// Load badges when DOM is ready
+document.addEventListener('DOMContentLoaded', () => {
+    loadCredlyBadges();
+});
+
+// ===================================================
 // MOBILE NAVIGATION
 // ===================================================
 
